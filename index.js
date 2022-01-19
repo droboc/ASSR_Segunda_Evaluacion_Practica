@@ -23,7 +23,7 @@ app.set('views', path.join(__dirname, "/views/"));
 app.engine('hbs', exphbs.engine({
         handlebars: allowInsecurePrototypeAccess(handlebars),
         extname: 'hbs',
-        defaultLayout: "MainLayout",
+        defaultLayout: "mainLayout",
         layoutsDir: __dirname + "/views/layouts/",
     })
 );
