@@ -1,17 +1,33 @@
 <table>
     <thead>
         <tr>
+            <th>Fuel Type Code</th>
+            <th>Station Name</th>
+            <th>Street Address</th>
+            <th>Intersection Directions</th>
             <th>City</th>
             <th>State</th>
             <th>ZIP</th>
+            <th>Station Phone</th>
+            <th>Status Code</th>
+            <th>Groups With Access Code</th>
+            <th>Access Days Time</th>
         </tr>
     </thead>
     <tbody>
         {{#each list}}
         <tr>
+            <td>{{this.FuelTypeCode}}</td>
+            <td>{{this.StationName}}</td>
+            <td>{{this.StreetAddress}}</td>
+            <td>{{this.IntersectionDirections}}</td>
             <td>{{this.City}}</td>
             <td>{{this.State}}</td>
             <td>{{this.ZIP}}</td>
+            <td>{{this.StationPhone}}</td>
+            <td>{{this.StatusCode}}</td>
+            <td>{{this.GroupsWithAccessCode}}</td>
+            <td>{{this.AccessDaysTime}}</td>
         </tr>
         {{/each}}
     </tbody>
