@@ -2,7 +2,6 @@ const mongoose = require('mongoose')
 
 
 var routerSchema = new mongoose.Schema({
-    FuelTypeCode:{ type: String, required: ' This field is required', },
     StationName:{ type: String, required: ' This field is required', },
     StreetAddress:{ type: String, required: ' This field is required', },
     IntersectionDirections:{ type: String, required: ' This field is required', },
